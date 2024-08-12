@@ -1,5 +1,5 @@
 import React from 'react';
-import { activities } from '@/data'; // Adjust the path according to your file structure
+import { activities } from '@/data';
 
 const Section3: React.FC = () => {
   return (

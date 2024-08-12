@@ -13,7 +13,7 @@ const UpdatesSection1 = () => {
             <div
               key={index}
               className="bg-yellow-100 border border-yellow-400 p-6 rounded-lg shadow-lg flex flex-col items-center"
-              style={{ width: '100%' }} // Ensure card width fits within grid column
+              style={{ width: '100%' }}
             >
               <div className="relative w-full h-40 mb-4">
                 <img

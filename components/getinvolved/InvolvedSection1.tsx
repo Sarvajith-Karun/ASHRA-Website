@@ -1,7 +1,7 @@
 import React from 'react';
-import { founders } from '@/data'; // Adjust the path according to your file structure
+import { founders } from '@/data';
 
-const InvolvedSection1: React.FC = () => {
+const InvolvedSection1 = () => {
   return (
     <section className="bg-white py-20">
       <div className="max-w-7xl mx-auto text-center">
