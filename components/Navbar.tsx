@@ -35,7 +35,7 @@ const Navbar = () => {
                   Get Involved
                   <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#DAA520] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"></span>
                 </a>
-                <a href="/" className="relative inline-block text-[#DAA520] rounded-lg p-2 transition duration-300 ease-in-out group">
+                <a href="/updates" className="relative inline-block text-[#DAA520] rounded-lg p-2 transition duration-300 ease-in-out group">
                   Updates
                   <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#DAA520] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"></span>
                 </a>
@@ -79,15 +79,15 @@ const Navbar = () => {
                 Home
                 <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#DAA520] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"></span>
               </a>
-              <a href="/" className="relative block text-[#DAA520] rounded-lg p-2 transition duration-300 ease-in-out group">
+              <a href="/about" className="relative block text-[#DAA520] rounded-lg p-2 transition duration-300 ease-in-out group">
                 About
                 <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#DAA520] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"></span>
               </a>
-              <a href="/" className="relative block text-[#DAA520] rounded-lg p-2 transition duration-300 ease-in-out group">
+              <a href="/getinvolved" className="relative block text-[#DAA520] rounded-lg p-2 transition duration-300 ease-in-out group">
                 Get Involved
                 <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#DAA520] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"></span>
               </a>
-              <a href="/" className="relative block text-[#DAA520] rounded-lg p-2 transition duration-300 ease-in-out group">
+              <a href="/updates" className="relative block text-[#DAA520] rounded-lg p-2 transition duration-300 ease-in-out group">
                 Updates
                 <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#DAA520] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"></span>
               </a>
