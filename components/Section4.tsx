@@ -1,22 +1,44 @@
-import React from 'react';
+"use client"
 
-const Section4 = () => {
+import React from 'react';
+import { motion } from 'framer-motion';
+
+const Section4: React.FC = () => {
   return (
     <section className="bg-[#F5F5F5] py-20 flex items-center justify-center">
-      <div className="text-center max-w-xl mx-auto">
-        <h2 className="text-5xl font-extrabold text-black mb-6">
+      <motion.div
+        className="text-center max-w-xl mx-auto"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: 'easeOut' }}
+        viewport={{ once: true, amount: 'all' }}
+      >
+        <motion.h2
+          className="text-5xl font-extrabold text-black mb-6"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+        >
           Join Us in Spreading Hope
-        </h2>
-        <p className="text-lg text-gray-600 mb-8">
+        </motion.h2>
+        <motion.p
+          className="text-lg text-gray-600 mb-8"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+        >
           Your generosity can make a difference. Support our mission to provide essential resources and opportunities to those in need.
-        </p>
-        <a
+        </motion.p>
+        <motion.a
           href="mailto:ashracorporations@gmail.com"
           className="bg-[#DAA520] text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-black hover:text-[#DAA520] transition duration-300"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
         >
           Donate Now
-        </a>
-      </div>
+        </motion.a>
+      </motion.div>
     </section>
   );
 };

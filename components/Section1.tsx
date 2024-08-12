@@ -1,21 +1,37 @@
-import React from 'react';
+"use client"
 
-const Section1 = () => {
+import React from 'react';
+import { motion } from 'framer-motion';
+
+const Section1: React.FC = () => {
   return (
-    <section className='pt-16'>
-      <section
+    <section className="pt-16">
+      <motion.section
         className="bg-cover bg-center h-[75vh] flex items-center justify-center"
         style={{ backgroundImage: "url('/HeroBG.jpeg')" }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
       >
-        <div className="text-center bg-white bg-opacity-75 p-8 rounded-lg">
+        <motion.div
+          className="text-center bg-white bg-opacity-75 p-8 rounded-lg"
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.75, ease: "easeOut" }}
+        >
           <h1 className="text-6xl font-extrabold text-black mb-4">
             ASHRA: <span className="text-[#DAA520]">Be the Hope</span>
           </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <motion.p
+            className="text-lg text-gray-600 max-w-2xl mx-auto"
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.75, ease: "easeOut", delay: 0.2 }}
+          >
             Welcome to ASHRA, where our mission is to provide essential support and resources to orphanages and impoverished families across South Asia.
-          </p>
-        </div>
-      </section>
+          </motion.p>
+        </motion.div>
+      </motion.section>
     </section>
   );
 };
