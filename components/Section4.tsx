@@ -18,6 +18,7 @@ const Section4: React.FC = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
+          viewport={{ once: true, amount: 'some' }}
         >
           Join Us in Spreading Hope
         </motion.h2>
@@ -26,6 +27,7 @@ const Section4: React.FC = () => {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
+          viewport={{ once: true, amount: 'some' }}
         >
           Your generosity can make a difference. Support our mission to provide essential resources and opportunities to those in need.
         </motion.p>
@@ -35,6 +37,7 @@ const Section4: React.FC = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
+          viewport={{ once: true, amount: 'some' }}
         >
           Donate Now
         </motion.a>

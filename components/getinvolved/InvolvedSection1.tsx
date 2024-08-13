@@ -12,6 +12,7 @@ const InvolvedSection1 = () => {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 'some' }}
       >
         <h2 className="text-5xl font-bold text-black mb-16">Founders</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-12">
@@ -22,6 +23,7 @@ const InvolvedSection1 = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
+              viewport={{ once: true, amount: 'some' }}
             >
               <div className="w-32 h-32 mb-4 rounded-full bg-yellow-300 flex items-center justify-center">
                 <img

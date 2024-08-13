@@ -12,6 +12,7 @@ const InvolvedSection3 = () => {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 'some' }}
       >
         <h2 className="text-5xl font-bold text-black mb-16">Join Us</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -20,6 +21,7 @@ const InvolvedSection3 = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}
+            viewport={{ once: true, amount: 'some' }}
           >
             <FaUsers className="text-[#DAA520] text-6xl mb-6" />
             <h3 className="text-3xl font-semibold text-black mb-4">Dance Team</h3>
@@ -33,6 +35,7 @@ const InvolvedSection3 = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true, amount: 'some' }}
           >
             <FaHandsHelping className="text-[#DAA520] text-6xl mb-6" />
             <h3 className="text-3xl font-semibold text-black mb-4">Volunteer Team</h3>
@@ -47,6 +50,7 @@ const InvolvedSection3 = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
+          viewport={{ once: true, amount: 'some' }}
         >
           <h3 className="text-3xl font-semibold text-black mb-4">Interested in Joining?</h3>
           <p className="text-lg text-black mb-6">

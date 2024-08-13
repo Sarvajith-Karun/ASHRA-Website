@@ -12,6 +12,7 @@ const InvolvedSection2 = () => {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 'some' }}
       >
         <h2 className="text-4xl font-bold text-black mb-12">Get In Touch with ASHRA</h2>
         <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-16">
@@ -20,6 +21,7 @@ const InvolvedSection2 = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}
+            viewport={{ once: true, amount: 'some' }}
           >
             <FaInstagram className="text-[#DAA520] text-6xl mb-4" />
             <h3 className="text-2xl font-semibold text-black mb-2">Follow Us on Instagram</h3>
@@ -38,6 +40,7 @@ const InvolvedSection2 = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true, amount: 'some' }}
           >
             <FaEnvelope className="text-[#DAA520] text-6xl mb-4" />
             <h3 className="text-2xl font-semibold text-black mb-2">Email Us</h3>

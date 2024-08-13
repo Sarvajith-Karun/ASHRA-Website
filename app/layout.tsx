@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Noto_Serif } from "@next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Footer from "@/components/footer/Footer";
 
 const noto_serif = Noto_Serif({ subsets: ["latin"] });
 

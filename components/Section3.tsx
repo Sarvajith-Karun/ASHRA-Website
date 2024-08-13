@@ -12,7 +12,7 @@ const Section3: React.FC = () => {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut' }}
-        viewport={{ once: true, amount: 'all' }}
+        viewport={{ once: true, amount: 'some' }}
       >
         <h2 className="text-5xl font-bold text-black mb-16">Our Activities</h2>
 
@@ -30,12 +30,14 @@ const Section3: React.FC = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, ease: 'easeOut' }}
+              viewport={{ once: true, amount: 'some' }}
             >
               <motion.div
                 className="w-32 h-32 mb-4 rounded-full bg-yellow-300 flex items-center justify-center"
                 initial={{ opacity: 0, rotate: 90 }}
                 animate={{ opacity: 1, rotate: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut' }}
+                viewport={{ once: true, amount: 'some' }}
               >
                 <img
                   src={activity.image}

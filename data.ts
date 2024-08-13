@@ -64,3 +64,42 @@ export const founders: Founder[] = [
     image: "DefaultPfp.png",
   },
 ];
+
+export interface FooterLink {
+  name: string;
+  link: string;
+}
+
+export const pages: FooterLink[] = [
+  {
+    name: "Home",
+    link: "#"
+  },
+  {
+    name: "About",
+    link: "#"
+  },
+  {
+    name: "Get Involved",
+    link: "#"
+  },
+  {
+    name: "Updates",
+    link: "#"
+  },
+]
+
+export const legal: FooterLink[] = [
+  {
+    name: "Terms of use",
+    link: "#"
+  },
+  {
+    name: "Privacy Policy",
+    link: "#"
+  },
+  {
+    name: "Cookie Policy",
+    link: "#"
+  },
+]

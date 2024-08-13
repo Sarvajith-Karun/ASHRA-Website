@@ -12,12 +12,14 @@ const Section1: React.FC = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
+        viewport={{ once: true, amount: 'some' }}
       >
         <motion.div
           className="text-center bg-white bg-opacity-75 p-8 rounded-lg"
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.75, ease: "easeOut" }}
+          viewport={{ once: true, amount: 'some' }}
         >
           <h1 className="text-6xl font-extrabold text-black mb-4">
             ASHRA: <span className="text-[#DAA520]">Be the Hope</span>
@@ -27,6 +29,7 @@ const Section1: React.FC = () => {
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.75, ease: "easeOut", delay: 0.2 }}
+            viewport={{ once: true, amount: 'some' }}
           >
             Welcome to ASHRA, where our mission is to provide essential support and resources to orphanages and impoverished families across South Asia.
           </motion.p>
