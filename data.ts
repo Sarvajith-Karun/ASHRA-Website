@@ -51,17 +51,17 @@ export const founders: Founder[] = [
   {
     name: "Shriya Yalamanchili",
     email: "shriya.chili@gmail.com",
-    image: "DefaultPfp.png",
+    image: "image2.jpeg",
   },
   {
     name: "Sadhna Patlola",
     email: "sadhna.patlola@gmail.com",
-    image: "DefaultPfp.png",
+    image: "image1.jpeg",
   },
   {
     name: "Anshi Peddaredivari",
     email: "anshi.pedda@gmail.com",
-    image: "DefaultPfp.png",
+    image: "image0.jpeg",
   },
 ];
 
