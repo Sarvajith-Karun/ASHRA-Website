@@ -36,7 +36,7 @@ const MissionSection: React.FC = () => {
           </motion.div>
         </div>
 
-        <div className="lg:w-1/2 flex justify-center lg:justify-end hidden lg:block">
+        <div className="lg:w-1/2 flex justify-center lg:justify-end">
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
