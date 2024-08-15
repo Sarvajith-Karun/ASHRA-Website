@@ -34,7 +34,7 @@ const UpdatesSection1 = () => {
           {updates.map((update, index) => (
             <motion.div
               key={index}
-              className="relative bg-white border border-gray-200 p-6 rounded-lg shadow-lg overflow-hidden flex flex-col items-center transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl"
+              className="relative bg-white border border-gray-200 p-6 rounded-lg overflow-hidden flex flex-col items-center transition-transform duration-300 ease-in-out transform hover:scale-105"
               style={{ width: '100%' }}
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}

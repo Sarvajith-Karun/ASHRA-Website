@@ -20,9 +20,9 @@ const Footer = () => {
                 <h2 className="text-lg font-semibold mb-2 text-[#DAA520]">PAGES</h2>
                 <ul className="text-sm text-gray-300 space-y-1">
                   <li><a href="/" className="hover:text-white">Home</a></li>
-                  <li><a href="/resources" className="hover:text-white">Resources</a></li>
-                  <li><a href="/team" className="hover:text-white">Get Involved</a></li>
-                  <li><a href="/contact" className="hover:text-white">Contact</a></li>
+                  <li><a href="/about" className="hover:text-white">About</a></li>
+                  <li><a href="/getinvolved" className="hover:text-white">Get Involved</a></li>
+                  <li><a href="/updates" className="hover:text-white">Updates</a></li>
                 </ul>
               </nav>
 
@@ -43,6 +43,10 @@ const Footer = () => {
                 </ul>
               </nav>
             </div>
+          </div>
+
+          <div className="mt-12 text-center text-gray-400 text-sm">
+            <p>&copy; {new Date().getFullYear()} ASHRA. All rights reserved.</p>
           </div>
         </footer>
       </div>
