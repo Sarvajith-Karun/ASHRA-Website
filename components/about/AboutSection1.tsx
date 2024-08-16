@@ -3,6 +3,7 @@
 import * as React from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { motion } from "framer-motion";
+import { FaHeart, FaGlobe, FaBook } from "react-icons/fa";
 
 export function AboutSection1() {
   return (
@@ -15,9 +16,30 @@ export function AboutSection1() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true, amount: 'some' }}
         >
-          <h2 className="text-4xl font-extrabold mb-6 text-gray-800">Our Story</h2>
-          <p className="text-lg text-gray-700 leading-relaxed">
-            ASHRA is a female-led youth non-profit organization founded by Shriya, Anshi, and Sadhna on March 15th, 2024. What began as an idea on a living room couch has blossomed into a remarkable organization making a large impact. ASHRA merges the founders' love and passion for dance with a drive for societal change, channeling their efforts to collect donations and raise awareness for their motherland. As first-generation Americans born to Indian immigrants, our founders deeply understand the gaps within education and cultural awareness. ASHRA is dedicated to bridging these gaps together to foster a more inclusive world. Join us on this journey and be the change you wish to see in the world. BE THE HOPE!
+          <h2 className="text-4xl font-extrabold mb-6 text-gray-800">
+            Our Story
+            <span className="block w-16 h-1 bg-yellow-500 mt-2"></span>
+          </h2>
+          <p className="text-lg text-gray-700 leading-relaxed mb-8">
+            ASHRA is a female-led youth non-profit organization founded by Shriya, Anshi, and Sadhna on March 15th, 2024.
+            What began as an idea on a living room couch has blossomed into a remarkable organization making a large impact.
+          </p>
+          <ul className="space-y-6 text-gray-700">
+            <li className="flex items-center space-x-4">
+              <FaHeart className="text-yellow-500 text-2xl" />
+              <span>Passionate about dance, our founders use their art to inspire change.</span>
+            </li>
+            <li className="flex items-center space-x-4">
+              <FaGlobe className="text-yellow-500 text-2xl" />
+              <span>First-generation Americans with a deep understanding of cultural and educational gaps.</span>
+            </li>
+            <li className="flex items-center space-x-4">
+              <FaBook className="text-yellow-500 text-2xl" />
+              <span>Committed to fostering a more inclusive world through awareness and education.</span>
+            </li>
+          </ul>
+          <p className="text-lg text-gray-700 leading-relaxed mt-8">
+            Join us on this journey and <strong className="text-yellow-500">BE THE HOPE</strong> you wish to see in the world!
           </p>
         </motion.div>
 
