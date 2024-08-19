@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const InvolvedSection2 = () => {
   return (
-    <section className="bg-[#F8F8F8] py-16">
+    <section className="bg-white py-16">
       <motion.div
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
         initial={{ opacity: 0, y: 50 }}
