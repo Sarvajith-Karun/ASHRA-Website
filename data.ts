@@ -8,7 +8,7 @@ export const updates: Update[] = [
   {
     date: "June 1, 2024",
     description: "ASHRA had a successful booth at the Twin Cities Metro Asian Fair! While raising a substantial amount to donate, the founders were able to have amazing conversations with many individuals looking for a way to better our society. Thank you to the Indian Association of Minnesota for allowing us to spread awareness and joy!",
-    image: "StandardImage.png",
+    image: "Pic3.jpg",
   }
 ]
 
