@@ -1,10 +1,20 @@
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
 import { updates } from '@/data';
 import { motion } from 'framer-motion';
 
 const UpdatesSection1 = () => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  const handleImageClick = (image: string) => {
+    setSelectedImage(image);
+  };
+
+  const closeImage = () => {
+    setSelectedImage(null);
+  };
+
   return (
     <section className="min-h-screen bg-gray-100 py-16 pt-20 flex flex-col items-center">
       <motion.div
@@ -42,9 +52,10 @@ const UpdatesSection1 = () => {
               viewport={{ once: true, amount: 'some' }}
             >
               <motion.div
-                className="relative w-full h-40 mb-4 rounded-lg overflow-hidden"
+                className="relative w-full h-40 mb-4 rounded-lg overflow-hidden cursor-pointer"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.5 }}
+                onClick={() => handleImageClick(update.image)}
               >
                 <img
                   src={update.image}
@@ -64,6 +75,24 @@ const UpdatesSection1 = () => {
           ))}
         </div>
       </motion.div>
+
+      {selectedImage && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
+          <div className="relative">
+            <button
+              className="absolute top-4 right-4 bg-white text-gray-800 p-2 rounded-full shadow-lg"
+              onClick={closeImage}
+            >
+              Close
+            </button>
+            <img
+              src={selectedImage}
+              alt="Enlarged"
+              className="max-w-full max-h-full rounded-lg shadow-xl"
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 };
