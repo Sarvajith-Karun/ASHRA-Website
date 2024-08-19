@@ -45,7 +45,7 @@ const MissionSection: React.FC = () => {
             className="relative w-full h-72 lg:h-96"
           >
             <img
-              src="/StandardImage.png"
+              src="/Pic1.jpg"
               alt="Mission Image"
               className="rounded-lg shadow-lg object-cover w-full h-full"
             />
