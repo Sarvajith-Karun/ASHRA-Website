@@ -52,7 +52,7 @@ export function AboutSection1() {
         >
           <Carousel className="w-full">
             <CarouselContent>
-              {["/StandardImage.png", "/StandardImage.png", "/StandardImage.png"].map((src, index) => (
+              {["/Pic2.jpg", "/Pic3.jpg", "/Pic4.jpg"].map((src, index) => (
                 <CarouselItem key={index}>
                   <div className="p-2">
                     <motion.img
