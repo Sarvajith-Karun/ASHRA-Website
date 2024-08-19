@@ -8,7 +8,7 @@ import { FaHeart, FaGlobe, FaBook } from "react-icons/fa";
 export function AboutSection1() {
   return (
     <section className="min-h-screen pt-16 flex items-center">
-      <div className="w-full max-w-7xl mx-auto py-12 flex flex-col md:flex-row items-center px-4 md:px-8">
+      <div className="w-full max-w-7xl mx-auto py-12 flex flex-col md:flex-row items-center px-6 sm:px-8 md:px-8 lg:px-12">
         <motion.div
           className="md:w-1/2 md:pr-12 mb-8 md:mb-0"
           initial={{ opacity: 0, x: -50 }}
