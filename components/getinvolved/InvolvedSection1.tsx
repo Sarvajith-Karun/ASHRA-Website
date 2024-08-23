@@ -14,7 +14,7 @@ const InvolvedSection1 = () => {
         transition={{ duration: 0.8 }}
         viewport={{ once: true, amount: 'some' }}
       >
-        <h2 className="text-5xl font-bold text-black mb-16">Founders</h2>
+        <h2 className="text-5xl font-bold text-black mb-16 mt-5">Founders</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-12">
           {founders.map((founder, index) => (
             <motion.div
