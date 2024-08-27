@@ -45,8 +45,9 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="mt-12 text-center text-gray-400 text-sm">
-            <p>&copy; {new Date().getFullYear()} ASHRA. All rights reserved.</p>
+          <div className="mt-12 text-center text-gray-400 ">
+            <p className='text-lg'>&copy; {new Date().getFullYear()} ASHRA. All rights reserved.</p>
+            <p className='text-sm mt-1'>Website built with ❤️ by <a className='hover:text-white hover:transition-all underline underline-offset-2 text-blue-300' href='https://www.avibandi.com/'>Avi Bandi</a></p>
           </div>
         </footer>
       </div>
